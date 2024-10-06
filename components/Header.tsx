@@ -1,28 +1,27 @@
-import Link from 'next/link'
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
 
 export default function Header() {
   const linkToElement = (link: { label: string; link: string; highlight?: boolean }) => {
-  return (
-    <Link href={link.link} passHref> {/* Use Link instead of a */}
+    return (
       <a
         key={link.label}
+        href={link.link}
+        target="_blank"
         className={classes.link}
         data-active={link.highlight}
       >
         {link.label}
       </a>
-    </Link>
-  )
-}
+    )
+  }
 
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <Link href="/"> {/* Use Link instead of a */}
+          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
@@ -35,27 +34,15 @@ export default function Header() {
             >
               UptimeFlare
             </Text>
-          </Link>
+          </a>
         </div>
-  
+
         <Group gap={5} visibleFrom="sm">
-          {pageConfig.links.map(link => (
-            <Link key={link.label} href={link.link} passHref> {/* Use Link instead of a */}
-              <a className={classes.link} data-active={link.highlight}>
-                {link.label}
-              </a>
-            </Link>
-          ))}
+          {pageConfig.links.map(linkToElement)}
         </Group>
-  
+
         <Group gap={5} hiddenFrom="sm">
-          {pageConfig.links.filter((link) => (link as any).highlight).map(link => (
-            <Link key={link.label} href={link.link} passHref> {/* Use Link instead of a */}
-              <a className={classes.link} data-active={link.highlight}>
-                {link.label}
-              </a>
-            </Link>
-          ))}
+          {pageConfig.links.filter((link) => (link as any).highlight).map(linkToElement)}
         </Group>
       </Container>
     </header>
