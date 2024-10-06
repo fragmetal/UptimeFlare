@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
@@ -8,7 +7,8 @@ export default function Header() {
     return (
       <a
         key={link.label}
-        href={link.link} // Removed target="_blank"
+        href={link.link}
+        target="_blank"
         className={classes.link}
         data-active={link.highlight}
       >
@@ -16,12 +16,12 @@ export default function Header() {
       </a>
     )
   }
-  
+
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="/"> {/* Removed target="_blank" */}
+          <a href="/">
             <Text size="xl" span>
               🕒
             </Text>
@@ -38,29 +38,11 @@ export default function Header() {
         </div>
 
         <Group gap={5} visibleFrom="sm">
-          {pageConfig.links.map(link => (
-            <a
-              key={link.label}
-              href={link.link} // Removed target="_blank"
-              className={classes.link}
-              data-active={link.highlight}
-            >
-              {link.label}
-            </a>
-          ))}
+          {pageConfig.links.map(linkToElement)}
         </Group>
 
         <Group gap={5} hiddenFrom="sm">
-          {pageConfig.links.filter((link) => (link as any).highlight).map(link => (
-            <a
-              key={link.label}
-              href={link.link} // Removed target="_blank"
-              className={classes.link}
-              data-active={link.highlight}
-            >
-              {link.label}
-            </a>
-          ))}
+          {pageConfig.links.filter((link) => (link as any).highlight).map(linkToElement)}
         </Group>
       </Container>
     </header>
