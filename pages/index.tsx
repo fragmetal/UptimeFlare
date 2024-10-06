@@ -75,8 +75,9 @@ export default function Home({
         }}>
           Open-source monitoring and status page powered by{' '}
           <a href="https://www.cloudflare.com/" target="_blank">
-            Cloudflare.
+            Cloudflare
           </a>
+          .
         </Text>
       </main>
     </>
