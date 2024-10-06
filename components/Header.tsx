@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
