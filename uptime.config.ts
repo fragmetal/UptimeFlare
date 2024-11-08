@@ -22,7 +22,7 @@ const workerConfig = {
     //   target: 'https://js.onerelay.us.to'
     // }
     // Example TCP Monitor
-    // {
+    {
       id: 'bot_tcp_monitor',
       name: 'BOT TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
@@ -32,7 +32,7 @@ const workerConfig = {
     //   tooltip: 'My production server SSH',
     //   statusPageLink: 'https://example.com',
     //   timeout: 5000,
-    // },
+    },
   ],
   notification: {
     // [Optional] apprise API server URL
