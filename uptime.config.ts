@@ -15,24 +15,24 @@ const workerConfig = {
   // passwordProtection: 'username:password',
   // Define all your monitors here
   monitors: [
-    // {
-    //   id: 'BOT_monitor',
-    //   name: 'Relay Bot Monitor',
-    //   method: 'GET',
-    //   target: 'https://js.onerelay.us.to'
-    // }
-    // Example TCP Monitor
     {
-      id: 'bot_tcp_monitor',
-      name: 'BOT TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'node55.lunes.host:2067',
+      id: 'google_monitor',
+      name: 'Google',
+      method: 'GET',
+      target: 'https://www.google.com'
+    }
+    // Example TCP Monitor
+    // {
+    //   id: 'tcp_monitor',
+    //   name: 'TCP Monitor',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'TCP_PING',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: '',
     //   tooltip: 'My production server SSH',
     //   statusPageLink: 'https://example.com',
     //   timeout: 5000,
-    },
+    // },
   ],
   notification: {
     // [Optional] apprise API server URL
