@@ -16,10 +16,10 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     {
-      id: 'google_monitor',
-      name: 'Google',
+      id: 'Bot_monitor',
+      name: 'Bot',
       method: 'GET',
-      target: 'https://www.google.com'
+      target: 'http://node55.lunes.host:2067'
     }
     // Example TCP Monitor
     // {
