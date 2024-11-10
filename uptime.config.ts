@@ -1,9 +1,9 @@
 const pageConfig = {
   // Title for your status page
-  title: "Relay Status Page",
+  title: "Relay - Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/fragmetal', label: 'GitHub' }
+    //{ link: 'https://github.com/fragmetal', label: 'GitHub' }
     //{ link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
   ],
 }
@@ -17,7 +17,7 @@ const workerConfig = {
   monitors: [
     {
       id: 'Bot_monitor',
-      name: 'Bot - RelayJS',
+      name: 'Bot - RelayJS ( Power )',
       method: 'GET',
       target: 'http://node55.lunes.host:2067'
     },
