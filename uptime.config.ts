@@ -17,9 +17,15 @@ const workerConfig = {
   monitors: [
     {
       id: 'Bot_monitor',
-      name: 'Bot',
+      name: 'Bot - RelayJS',
       method: 'GET',
       target: 'http://node55.lunes.host:2067'
+    },
+    {
+      id: 'sadrisite_monitor',
+      name: 'Website - https://sadri.us.to/',
+      method: 'GET',
+      target: 'https://sadri.us.to'
     }
     // Example TCP Monitor
     // {
