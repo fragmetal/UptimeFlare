@@ -23,9 +23,15 @@ const workerConfig = {
     },
     {
       id: 'sadrisite_monitor',
-      name: 'Website - https://relay.sadri.us.to/',
+      name: 'Website - https://sadri.us.to/',
       method: 'GET',
-      target: 'https://relay.sadri.us.to'
+      target: 'https://sadri.us.to'
+    },
+    {
+      id: 'Onerelay_monitor',
+      name: 'Website - https://onerelay.us.to/',
+      method: 'GET',
+      target: 'https://onerelay.us.to'
     }
     // Example TCP Monitor
     // {
