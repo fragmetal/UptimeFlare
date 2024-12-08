@@ -19,7 +19,7 @@ const workerConfig = {
       id: 'Bot_monitor',
       name: 'Bot - RelayJS ( Power#3745 )',
       method: 'GET',
-      target: 'http://node55.lunes.host:2067'
+      target: 'http://node1.lunes.host:2060/'
     },
     {
       id: 'sadrisite_monitor',
