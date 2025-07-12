@@ -19,7 +19,7 @@ const workerConfig = {
       id: 'Bot_monitor',
       name: 'Bot - Power#3745',
       method: 'GET',
-      target: 'https://up.onerelay.us.to'
+      target: 'https://3000-firebase-relay-1749711158156.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev/'
     },
     {
       id: 'sadrisite_monitor',
