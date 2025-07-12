@@ -19,7 +19,7 @@ const workerConfig = {
       id: 'Bot_monitor',
       name: 'Bot - Power#3745',
       method: 'GET',
-      target: 'https://3000-firebase-relay-1749711158156.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev/'
+      target: 'https://maximum-pegasus-lively.ngrok-free.app/'
     },
     {
       id: 'sadrisite_monitor',
