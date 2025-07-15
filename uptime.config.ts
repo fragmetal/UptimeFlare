@@ -19,7 +19,7 @@ const workerConfig = {
       id: 'Bot_monitor',
       name: 'Bot - Power#3745',
       method: 'GET',
-      target: 'https://maximum-pegasus-lively.ngrok-free.app/'
+      target: 'https://507ab6b2-a51f-490e-9363-960390d518db-00-3pgweb6uweae0.pike.replit.dev/'
     },
     {
       id: 'sadrisite_monitor',
