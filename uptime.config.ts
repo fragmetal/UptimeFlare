@@ -16,12 +16,6 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     {
-      id: 'Bot_monitor',
-      name: 'Bot - Power#3745',
-      method: 'GET',
-      target: 'https://507ab6b2-a51f-490e-9363-960390d518db-00-3pgweb6uweae0.pike.replit.dev/'
-    },
-    {
       id: 'sadrisite_monitor',
       name: 'Website - https://sadri.us.to/',
       method: 'GET',
@@ -29,7 +23,7 @@ const workerConfig = {
     },
     {
       id: 'Onerelay_monitor',
-      name: 'Website - https://onerelay.us.to/',
+      name: 'Bot - Power',
       method: 'GET',
       target: 'https://onerelay.us.to'
     }
